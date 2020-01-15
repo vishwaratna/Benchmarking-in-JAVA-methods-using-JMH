@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>Benchmarking</artifactId>
 
-    <groupId>groupId</groupId>
-    <artifactId>Benchmarking</artifactId>
-    <version>1.0-SNAPSHOT</version>
+  <dependencies>
+    <dependency>
+      <artifactId>jmh-core</artifactId>
+      <groupId>org.openjdk.jmh</groupId>
+      <version>${jmh.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>jmh-generator-annprocess</artifactId>
+      <groupId>org.openjdk.jmh</groupId>
+      <version>${jmh.version}</version>
+    </dependency>
 
-    
+  </dependencies>
+  <groupId>groupId</groupId>
+  <modelVersion>4.0.0</modelVersion>
+  <properties>
+    <jmh.version>1.21</jmh.version>
+  </properties>
+  
+  <version>1.0-SNAPSHOT</version>
+
+
 </project>
